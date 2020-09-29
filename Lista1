@@ -1,0 +1,73 @@
+package lista;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+/**
+ *
+ * @author Kevin
+ */
+public class Lista {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        List miprimerlista = new ArrayList();
+        //agregar
+        miprimerlista.add(92);
+        miprimerlista.add("pedro");
+        
+        //obtener valor de psosicion
+        System.out.println(miprimerlista.get(0));
+        
+        System.out.println("");
+        
+        //imprime
+        System.out.println(miprimerlista);
+         System.out.println("");
+        
+        //dato
+        //System.out.println(((object)miprimerlista.get[0]).getClass[].getSinpleName[]);
+        
+        //quitar elemento
+        miprimerlista.remove(0);
+        System.out.println(miprimerlista);
+        miprimerlista.add("juan");
+        miprimerlista.add(8);
+        System.out.println(miprimerlista);
+         System.out.println("");
+        //tamaño
+        System.out.println(miprimerlista.size());
+        
+        //borra elementos
+        miprimerlista.clear();
+        System.out.println(miprimerlista);
+         System.out.println("");
+        
+        //tipos
+         miprimerlista.add("Dana");
+        miprimerlista.add(82);
+         miprimerlista.add("juan");
+        miprimerlista.add(48);
+         miprimerlista.add("julia");
+        miprimerlista.add(86);
+        
+        for(int i=0;i<=miprimerlista.size();i++){
+        System.out.println(miprimerlista.get(i));
+        
+        }
+        System.out.println("");
+        Iterator n= miprimerlista.iterator();
+        while(n.hasNext()){
+        System.out.println(n.next());
+        
+        }
+        //sustituis
+        miprimerlista.set(2, 98);
+        //lista suprim
+        System.out.println(miprimerlista.subList(1, 4));
+    }
+    
+}
